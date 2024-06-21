@@ -13,4 +13,5 @@
  - Customer Interaction: Online shops often provide customer support through various channels such as live chat, email, or phone to assist with inquiries, order tracking, and resolution of issues.
 
  - Security Measures: Online shops implement security protocols to safeguard customer information, payment details, and transactional data against unauthorized access or cyber threats.
+
 When choosing a name, consider your target audience, brand identity, and the types of products you plan to offer. Make sure the name is easy to remember, reflects your brand's personality, and is available as a domain name and on social media platforms.
