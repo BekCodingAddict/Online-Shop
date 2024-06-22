@@ -4,7 +4,7 @@ import FeaturedProduct from "./FeaturedProduct";
 
 function FeaturedProducts() {
   const products = useLoaderData();
-  console.log(products);
+
   return (
     <div className="small-container">
       <h2 className="title">Featured Products</h2>
@@ -20,8 +20,8 @@ function FeaturedProducts() {
 }
 
 export async function loader() {
-  const featuredProducts = await getProducts();
-  return featuredProducts;
+  const { products } = await getProducts();
+  return products;
 }
 
 export default FeaturedProducts;

@@ -1,4 +1,4 @@
-const API_URL = "https://api.escuelajs.co/api/v1";
+const API_URL = "https://dummyjson.com";
 
 export async function getProducts() {
   const res = await fetch(`${API_URL}/products`);

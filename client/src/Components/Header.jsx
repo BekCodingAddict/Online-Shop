@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import BCA2 from "../assets/BCA-Logo2.png";
 import cart from "../assets/cart.png";
 import menu from "../assets/menu.png";
 
 function Header() {
+  const products = useLoaderData();
+  const randomNum = Math.floor(Math.random() * products.length);
   return (
     <div className="header">
       <div className="container">
@@ -64,7 +66,7 @@ function Header() {
             </a>
           </div>
           <div className="col-2">
-            <img src="images/image1.png" alt="" />
+            <img src={products[products.length - randomNum].images[0]} alt="" />
           </div>
         </div>
       </div>
