@@ -5,6 +5,7 @@ import Accaunt from "./Pages/Accaunt";
 import Products from "./Pages/Products";
 import Cart from "./Pages/Cart";
 import { loader as featuredProductsLoader } from "./Components/FeaturedProducts";
+import ProductDetails from "./Pages/ProductDetails";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/cart",
     element: <Cart />,
+  },
+  {
+    path: "/products/:productId",
+    element: <ProductDetails />,
   },
 ]);
 function App() {
