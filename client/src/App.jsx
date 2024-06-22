@@ -20,6 +20,7 @@ const router = createBrowserRouter([
   {
     path: "/products",
     element: <Products />,
+    loader: featuredProductsLoader,
   },
   {
     path: "/cart",
