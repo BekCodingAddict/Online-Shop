@@ -1,4 +1,9 @@
+import { useLoaderData } from "react-router-dom";
+import { getProducts } from "../services/apiProducts";
+
 function FeaturedProducts() {
+  const products = useLoaderData();
+  console.log(products);
   return (
     <div className="small-container">
       <h2 className="title">Featured Products</h2>
@@ -159,6 +164,11 @@ function FeaturedProducts() {
       </div>
     </div>
   );
+}
+
+export async function loader() {
+  const featuredProducts = await getProducts();
+  return featuredProducts;
 }
 
 export default FeaturedProducts;
