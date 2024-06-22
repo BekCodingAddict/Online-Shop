@@ -1,3 +1,8 @@
+import playMarket from "../assets/play-store.png";
+import appStore from "../assets/app-store.png";
+import BCA from "../assets/BCA-Logo1.png";
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <div className="footer">
@@ -7,12 +12,16 @@ function Footer() {
             <h3>Download Our App</h3>
             <p>Download App for Android and ios mobile phone.</p>
             <div className="app-logo">
-              <img src="images/play-store.png" alt="" />
-              <img src="images/app-store.png" alt="" />
+              <Link to={"https://play.google.com/"}>
+                <img src={playMarket} alt="Play Market" />
+              </Link>
+              <Link to={"https://www.apple.com/app-store/"}>
+                <img src={appStore} alt="App Store" />
+              </Link>
             </div>
           </div>
           <div className="footer-col-2">
-            <img src="images/logo1.png" alt="" />
+            <img src={BCA} alt="" />
             <p>
               Our purpose is to sustainably make the pleasure and benefits of
               sports accessible to the many.

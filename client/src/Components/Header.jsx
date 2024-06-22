@@ -1,26 +1,31 @@
+import { Link } from "react-router-dom";
+import BCA2 from "../assets/BCA-Logo2.png";
+import cart from "../assets/cart.png";
+import menu from "../assets/menu.png";
+
 function Header() {
   return (
     <div className="header">
       <div className="container">
         <div className="navbar">
           <div className="logo">
-            <a href="index.html">
+            <Link to="/">
               <img
                 id="logo"
-                src="../assets/Logo2.png"
+                src={BCA2}
                 alt="logo"
-                width="65px"
-                height="65px"
+                width="280px"
+                height="58px"
               />
-            </a>
+            </Link>
           </div>
           <nav>
             <ul id="MenuItems">
               <li>
-                <a href="index.html">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="products.html">Products</a>
+                <Link to="/products">Products</Link>
               </li>
               <li>
                 <a href="">About</a>
@@ -29,18 +34,18 @@ function Header() {
                 <a href="">Contact</a>
               </li>
               <li>
-                <a href="account.html">Account</a>
+                <Link to="/accaunt">Account</Link>
               </li>
             </ul>
           </nav>
           <a href="cart.html">
-            <img src="images/cart.png" width="30px" height="30px" alt="" />
+            <img src={cart} width="30px" height="30px" alt="Cart" />
           </a>
           <img
             id="logo"
-            src="images/menu.png"
+            src={menu}
             className="menu-icon"
-            onclick="menutoggle()"
+            // onclick="menutoggle()"
           />
         </div>
         <div className="row">
@@ -49,8 +54,8 @@ function Header() {
               Give Your Workout <br />A New Style!
             </h1>
             <p>
-              Success isn't always about greatness. It's about consistency.
-              Consistent
+              Success isn&apos;t always about greatness. It&apos;s about
+              consistency. Consistent
               <br />
               hard work gains sucsess. Greatness will come.
             </p>
